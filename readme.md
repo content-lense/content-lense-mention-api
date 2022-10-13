@@ -1,6 +1,14 @@
-# Content Lense Mentions API
+# Welcome to Content Lense Mentions API 👋
 
-This API extracts mentions of human beings from texts and collects additional information from Wikidata.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15559708/195378979-701254fa-ada7-41d4-abc7-494a40207a6d.png" />
+</p>
+
+_This is a microservice APIof Content Lense, a project that aims at enabling publishers to easily gain insights into their content._
+_This API extracts mentions of human beings from texts and collects additional information from Wikidata._
+
+Please note that this repository is part of the [Content Lense Project](https://github.com/content-lense) and depends on the [Content Lense API](https://github.com/content-lense/content-lense-api).
+
 
 ## Building the Docker image
 
@@ -35,3 +43,23 @@ To analyse an article send it to the `/articles` endpoint as `Content-Type: appl
 Information on the (most likely) human being mentioned in a previously analyzed text can be retrieved by name from the `/people` route. The name is given as the `name` query parameter, e. g.:
 
 `http://localhost:5000/people?name=Angela%20Merkel`
+
+
+
+
+## Supported by
+
+Media Tech Lab [`media-tech-lab`](https://github.com/media-tech-lab)
+
+<a href="https://www.media-lab.de/en/programs/media-tech-lab">
+    <img src="https://raw.githubusercontent.com/media-tech-lab/.github/main/assets/mtl-powered-by.png" width="240" title="Media Tech Lab powered by logo">
+</a>
+
+---
+
+Cloud Creators GmbH [`cloud-creators`](https://cloud-creators.de)
+
+
+<a href="https://cloud-creators.de">
+    <img src="https://cloud-creators.de/assets/images/cc-logo.svg" width="240" title="Supported by Cloud Creators GmbH">
+</a>
