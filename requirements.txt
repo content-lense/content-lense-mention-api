@@ -1,0 +1,8 @@
+stanza
+flask
+flask_restful
+python-dotenv
+pandas
+sparqlwrapper
+gender_guesser
+pillow

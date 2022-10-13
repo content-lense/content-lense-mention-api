@@ -1,0 +1,33 @@
+POST http://localhost:5000/articles
+Content-Type: application/json
+
+{
+    "id": 0,
+    "heading":"Ein Artikel über Politik",
+    "summary":"Die stärkste in Europa",
+    "authors": ["Manfred Mustermann"],
+    "body": "Angela Merkel ist eine deutsche Politikerin (CDU). Sie wurde im November 2005 als erste Frau Bundeskanzlerin der Bundesrepublik Deutschland. Nach vorgezogenen Neuwahlen löste Merkel ihren Vorgänger und siebten Bundeskanzler Gerhard Schröder (SPD) ab und blieb gut 16 Jahre im Amt. Dennoch verfehlte sie den Rekord ihres CDU Vorgängers Helmut Kohl um wenige Tage."
+}
+
+###
+
+GET http://localhost:5000/people?name=Angela%20Merkel
+
+###
+
+GET http://localhost:5000/people?name=Gerhard%20Schröder
+
+### 
+# @name example
+GET http://localhost:5000/articles/example
+
+###
+POST http://localhost:5000/articles
+Content-Type: application/json
+
+{
+    "id": 1,
+    "heading": "{{example.response.body.heading}}",
+    "summary": "{{example.response.body.summary}}",
+    "authors": "{{example.response.body.authors}}"
+}
